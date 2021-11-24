@@ -1,0 +1,599 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: none;
+    margin: 0;
+    background: black;
+}
+
+#bubbles {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: -1;
+    position: fixed;
+    bottom: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    visibility: hidden
+}
+
+#bubbles img {
+    animation: bubble 7s linear infinite;
+}
+
+#bubbles :nth-child(1) {
+    width: 30px;
+    height: 30px;
+    animation-delay: 3s;
+}
+
+#bubbles :nth-child(2) {
+    width: 25px;
+    height: 25px;
+    animation-delay: 8s;
+}
+
+#bubbles :nth-child(3) {
+    width: 40px;
+    height: 40px;
+    ;
+    animation-delay: 2s;
+}
+
+#bubbles :nth-child(4) {
+    width: 25px;
+    height: 25px;
+    animation-delay: 5s;
+}
+
+#bubbles :nth-child(5) {
+    width: 30px;
+    height: 30px;
+    ;
+    animation-delay: 4s;
+}
+
+#bubbles :nth-child(6) {
+    width: 20px;
+    height: 20px;
+    ;
+    animation-delay: 6s;
+}
+
+#bubbles :nth-child(7) {
+    width: 40px;
+    height: 40px;
+    animation-delay: 1s;
+}
+
+#bubbles :nth-child(8) {
+    width: 35px;
+    height: 35px;
+    animation-delay: 7s;
+}
+
+@keyframes bubble {
+    0% {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.division {
+    width: 90%;
+    background: rgb(0, 0, 68);
+    display: block;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+#home {
+    margin-top: 70px !important;
+}
+
+#navbar {
+    font-family: sans-serif;
+    width: 100%;
+    background: linear-gradient(to right, #00fff0, #5af051);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    height: 50px;
+    transition: 0s;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    flex-direction: row;
+    transition: 0.5s;
+}
+
+#navbar ul li {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+    transition: 0.5s;
+    font-size: 13px;
+}
+
+#navbar a:hover {
+    border: 0.7px solid white;
+    margin: 10px;
+    padding: 3px;
+}
+
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 6px;
+    left: 10px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.35s;
+}
+
+#menu div {
+    width: 30px;
+    border-radius: 4.2px;
+    height: 4px;
+    background-color: white;
+    margin: 7px;
+    transition: 0.35s;
+}
+
+#bar1,
+#bar2,
+#bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1change {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.bar2change {
+    opacity: 0;
+}
+
+.bar3change {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.division:hover {
+    box-shadow: 0 0 30px lightpink;
+}
+
+.name {
+    width: 280px;
+    display: block;
+    margin: 0 auto 10px auto;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+#fname {
+    color: cyan;
+    position: relative;
+    animation: fname 0.5s linear forwards;
+}
+
+#lname {
+    color: lime;
+    position: relative;
+    animation: lname 0.5s linear forwards;
+}
+
+#or {
+    font-size: 70px;
+    text-align: center;
+    margin: 40px 0 40px 0;
+    font-family: algerian, sans-serif;
+    color: orange;
+    font-weight: bold;
+}
+
+#codemaster {
+    font-size: 100px;
+    text-align: center;
+    margin: 20px auto 40px auto;
+    font-family: 'Rampart One', cursive;
+    color: rgba(166, 255, 0, 0.596);
+    display: block;
+    width: 800px;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+#codemaster:hover {
+    box-shadow: 0 0 150px cyan;
+    background: blue;
+    color: rgb(166, 255, 0);
+}
+
+.normaltext {
+    font-size: 25px;
+    color: lightpink;
+    font-family: sans-serif;
+}
+
+#hometext {
+    display: block;
+}
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+    color: cyan;
+}
+
+#mainimg {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 900px;
+    height: 550px;
+}
+
+#imganddesc {
+    transform: scale(0.0001, 1);
+    transition: 0.5s;
+}
+
+.imganddescinview {
+    transform: scale(1, 1) !important;
+}
+
+#imgdesc {
+    text-align: center;
+    color: yellow !important;
+    margin: 30px 0;
+    font-size: 30px !important;
+}
+
+#projectlinks {
+    text-align: center;
+}
+
+#projectlinks ul li {
+    width: 3px;
+    background: white;
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+
+.projectlinksinview div {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.projectlinksinview:nth-child(odd) div {
+    left: -400px !important;
+}
+
+.projectlinksinview:nth-child(even) div {
+    left: 0px !important;
+}
+
+#projectlinks ul li div {
+    position: relative;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+}
+
+#projectlinks ul li:nth-child(odd) div {
+    left: -500px;
+}
+
+#projectlinks ul li:nth-child(even) div {
+    left: 100px;
+}
+
+.projectlink:hover {
+    border-bottom: 3px solid lime;
+}
+
+#projectlinks ul li div {
+    width: 400px;
+}
+
+.projectlink {
+    text-decoration: none;
+    color: orange;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.contactmeSH {
+    color: yellow;
+}
+
+#ayush {
+    display: block;
+    margin: 20px auto;
+    width: 250px
+}
+
+@keyframes fname {
+    0% {
+        right: 0px;
+        opacity: 0;
+    }
+    100% {
+        right: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes lname {
+    0% {
+        left: 0px;
+        opacity: 0;
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 30px;
+        opacity: 1;
+        transform: rotate(10deg);
+    }
+}
+
+@media (max-width:1040px) {
+    .division {
+        margin: 30px auto;
+        padding: 10px;
+    }
+    .name {
+        font-size: 45px;
+        width: 210px;
+        margin: 0 auto 5px auto;
+    }
+    #or {
+        font-size: 65px;
+        margin: 30px 0;
+    }
+    #codemaster {
+        font-size: 75px;
+        margin: 20px auto 30px auto;
+        width: 580px;
+    }
+    #codemaster:hover {
+        box-shadow: 0 0 100px cyan;
+    }
+    .normaltext {
+        font-size: 20px;
+    }
+    .heading {
+        font-size: 35px;
+    }
+    #mainimg {
+        width: 650px;
+        height: 397px;
+    }
+    #imgdesc {
+        margin: 20px 0;
+        font-size: 27px !important;
+    }
+    #projectlinks ul li {
+        padding: 5px 0;
+    }
+    #projectlinks ul li div {
+        width: 250px;
+    }
+    .projectlinksinview:nth-child(odd) div {
+        left: -250px !important;
+    }
+    .projectlinksinview:nth-child(even) div {
+        left: 0px !important;
+    }
+    #projectlinks ul li:nth-child(odd) div {
+        left: -300px;
+    }
+    #projectlinks ul li:nth-child(even) div {
+        left: 50px;
+    }
+    .projectlink {
+        font-size: 22px;
+    }
+    #ayush {
+        margin: 10px auto;
+        width: 200px
+    }
+}
+
+@media (max-width:760px) {
+    .division {
+        margin: 25px auto;
+        padding: 8px;
+    }
+    .name {
+        font-size: 37px;
+        width: 190px;
+        margin: 0 auto 5px auto;
+    }
+    #or {
+        font-size: 55px;
+        margin: 20px 0;
+    }
+    #codemaster {
+        font-size: 65px;
+        margin: 20px auto 30px auto;
+        width: 500px;
+    }
+    #codemaster:hover {
+        box-shadow: 0 0 90px cyan;
+    }
+    .normaltext {
+        font-size: 20px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    #mainimg {
+        width: 520px;
+        height: 317px;
+    }
+    #imgdesc {
+        margin: 15px 0;
+        font-size: 23px !important;
+    }
+    #projectlinks ul li {
+        padding: 5px 0;
+    }
+    #projectlinks ul li div {
+        width: 200px;
+    }
+    .projectlinksinview:nth-child(odd) div {
+        left: -200px !important;
+    }
+    .projectlinksinview:nth-child(even) div {
+        left: 0px !important;
+    }
+    #projectlinks ul li:nth-child(odd) div {
+        left: -230px;
+    }
+    #projectlinks ul li:nth-child(even) div {
+        left: 30px;
+    }
+    .projectlink {
+        font-size: 20px;
+    }
+    #ayush {
+        margin: 10px auto;
+        width: 180px
+    }
+}
+
+@media (max-width:605px) {
+    #navbar {
+        justify-content: left;
+    }
+    #menu {
+        visibility: visible;
+        opacity: 1;
+    }
+    #navbar ul {
+        margin-top: 50px;
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+        position: relative;
+        left: -300px;
+        transition-duration: 0.5s
+    }
+    #navbar ul {
+        margin-top: 50px;
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+        position: relative;
+        left: -300px
+    }
+    .ulchange {
+        visibility: visible !important;
+        opacity: 1 !important;
+        left: -5px !important
+    }
+    #navbar ul li {
+        background: rgba(156, 90, 243, 0.7);
+    }
+    .division {
+        margin: 25px auto;
+        padding: 5px;
+    }
+    .division:hover {
+        box-shadow: 0 0 15px lightpink;
+    }
+    .name {
+        font-size: 28px;
+        width: 150px;
+        margin: 0 auto 5px auto;
+    }
+    #or {
+        font-size: 32px;
+        margin: 20px 0;
+    }
+    #codemaster {
+        font-size: 35px;
+        margin: 15px auto 25px auto;
+        width: 270px;
+    }
+    #codemaster:hover {
+        box-shadow: 0 0 60px cyan;
+    }
+    .normaltext {
+        font-size: 15px;
+    }
+    .heading {
+        font-size: 24px;
+    }
+    #mainimg {
+        width: 95%;
+        height: 55vw;
+    }
+    #imgdesc {
+        margin: 15px 0;
+        font-size: 23px !important;
+    }
+    #projectlinks ul li {
+        background: none;
+    }
+    #projectlinks ul li div {
+        width: 170px;
+    }
+    .projectlinksinview:nth-child(odd) div {
+        left: -85px !important;
+    }
+    .projectlinksinview:nth-child(even) div {
+        left: -85px !important;
+    }
+    #projectlinks ul li:nth-child(odd) div {
+        left: -125px;
+    }
+    #projectlinks ul li:nth-child(even) div {
+        left: -45px;
+    }
+    .projectlink {
+        font-size: 16px;
+    }
+    #ayush {
+        margin: 10px auto;
+        width: 150px
+    }
+}
