@@ -324,7 +324,7 @@ body {
 }
 
 .projectlink:hover {
-    border-bottom: 3px solid lime;
+    color: rgb(30, 255, 0);
 }
 
 #projectlinks ul li div {
@@ -336,6 +336,7 @@ body {
     color: orange;
     font-family: sans-serif;
     font-size: 25px;
+    transition: 0.3s;
 }
 
 .contactmeSH {
