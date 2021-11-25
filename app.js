@@ -4,7 +4,7 @@ var imgs = ["chess.jpg", "coding.jpg", "cricket.jpg", "math.jpg"]
 var mainimg = document.getElementById("mainimg")
 var imgdesc = document.getElementById("imgdesc")
 var imganddesc = document.querySelector("#imganddesc")
-var time = 3500
+var time = 2500
 var i = 0
 
 function elementInViewport(el) {
